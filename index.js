@@ -1,11 +1,10 @@
-const express = require('express')
+const customExpress = require('./config/customExpress')
+const db = require('./db/index')
 
-const app = express()
+const app = customExpress()
+
+db.connect()
 
 app.listen(3000, () => console.log('Server listen on 3000 !'))
-
-app.get('/status', (req,res) => res.send('Servidor OK !'))
-
-app.get('/atendimentos', (req,res) => res.send('Pagina de atendimentos'))
 
 module.exports = app
