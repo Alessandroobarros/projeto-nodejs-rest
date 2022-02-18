@@ -23,6 +23,7 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "mogoose": "0.0.1-security",
+    "moment": "^2.29.1",
     "mongodb": "^4.3.1",
     "mongoose": "^5.10.15"
   },

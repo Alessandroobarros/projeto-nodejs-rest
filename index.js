@@ -1,4 +1,3 @@
-const customExpress = require ('./config/customExpress')
 const db = require('./db/index')
 const app = require ('./app')
 

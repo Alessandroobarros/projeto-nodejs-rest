@@ -15,10 +15,14 @@ const AtendimentoSchema = new mongoose.Schema({
         type: String
     },
     status: {
-        type: String
+        type: String,
+        default: 'Aguardando'
     },
     observacoes: {
         type: String
+    },
+    dataCriacao: {
+        type: Date
     }
 })
 
